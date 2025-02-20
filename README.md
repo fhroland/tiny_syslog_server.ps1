@@ -17,3 +17,5 @@ A simple PowerShell script that acts as a Syslog server, receiving Syslog messag
 - Open UDP Port 514 in the firewall (run as Admin in PowerShell) if necessary:
   ```powershell
   New-NetFirewallRule -DisplayName "Allow Syslog UDP 514" -Direction Inbound -Protocol UDP -LocalPort 514 -Action Allow
+
+This script was used and tested under Windows 11.
